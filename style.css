@@ -153,3 +153,19 @@ a:hover {
 a:active {
     color: blue;
   }
+
+div h3 {
+    color: rgb(209, 137, 29);
+}
+
+div + h3 {
+    color: rgb(234, 2, 255);
+  }
+
+video ~ h3 {
+    color: rgb(30, 84, 116);
+}
+
+div.grid-item1 {
+    color: #b60000;
+}

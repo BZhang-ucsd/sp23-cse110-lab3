@@ -13,7 +13,7 @@ box1 {
   }
 
 box2 {
-    width: 300px;
+    width: 200px;
     height: 200px;
     margin: 50px 10px 50px 10px;  
     padding: 10px 50px 10px 50px;
@@ -63,3 +63,78 @@ li {
     left: 20px;
     background: rgb(255, 187, 0);
   }
+
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    background-color: rgb(255, 240, 190);
+    margin: 50px;
+}
+
+.flexbox-item1{
+    align-self: flex-start;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.flexbox-item2{
+    align-self: flex-start;
+    flex-grow: 4;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.flexbox-item3{
+    align-self: flex-end;
+    flex-shrink: 5;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.grid{
+    display: grid;
+    column-gap: 50px;
+    margin: 50px;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(255, 240, 190);
+    padding: auto;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item3 {
+    justify-self: end;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

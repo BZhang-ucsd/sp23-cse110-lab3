@@ -23,8 +23,11 @@ box1 {
 span,
 li {
   width: 100ex;
-  height: 5rem;
-  border: 2px solid rgb(0, 150, 255);
+  height: 8rem;
+  border-width: 2px ;
+  border-style: dashed;
+  border-color: rgb(0, 150, 255);
+  border-radius: 30px;
   margin: auto;
   padding: .5em;
 }

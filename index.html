@@ -10,6 +10,10 @@
         color: maroon;
         text-align:center;
       }
+      p {color: red;}
+      p.d1 {display: inline;}
+      p.d2 {display: block;}
+      p.d3 {display: inline-block;}
     </style>
     <title>Team's First Meeting</title>
   </head>
@@ -35,9 +39,9 @@
       <div class = "follow_up;" >
         <h3>Last Meeting Follow-up</h3>
           <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li>This will be the <p class="d1">item 1 with inline display</p> for follow up</li>
+            <li>This will be the <p class="d2">item 2 with block display</p> for follow up</li>
+            <li>This will be the <p class="d3">item 3 with inline-block display</p> for follow up</li>
           </ol>
       </div>
       <div class="new_business">

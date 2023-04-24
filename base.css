@@ -24,6 +24,8 @@ span,
 li {
   width: 100ex;
   height: 8rem;
+  max-width: 200ex;
+  max-height: 20rem;
   border-width: 2px ;
   border-style: dashed;
   border-color: rgb(0, 150, 255);

@@ -20,6 +20,9 @@ box2 {
     border: 5px solid black;
 }
 
+color, h2{
+    color: #b60000;
+}
 span,
 li {
   width: 100ex;
@@ -138,3 +141,15 @@ li {
     font-size: 30px;
     text-align: center;
 }
+
+a[target] {
+    background-color: yellow;
+  }
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+  }

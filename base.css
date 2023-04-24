@@ -31,3 +31,7 @@ li {
   margin: auto;
   padding: .5em;
 }
+
+.under {
+    text-decoration: underline red;
+  }

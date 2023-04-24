@@ -1,4 +1,5 @@
 box1 {
+    /*box model with 3 absoolute units, long padding, border(style color width) and long margin*/
     width: 8cm;
     height: 4cm;
     margin-top: 10px;
@@ -13,6 +14,7 @@ box1 {
   }
 
 box2 {
+    /*box model with width height, short margin, short padding , color with name*/
     width: 200px;
     height: 200px;
     margin: 50px 10px 50px 10px;  
@@ -20,16 +22,19 @@ box2 {
     border: 5px solid black;
 }
 
+/*selector list, color with hex*/
 color, h2{
-    color: #b60000;
+    color: #b60000; 
 }
+
+/*selector list with margin:auto, border width style radiu and color with rgb*/
 span,
 li {
   width: 100ex;
   height: 8rem;
   max-width: 200ex;
   max-height: 20rem;
-  border-width: 2px ;
+  border-width: 2px;
   border-style: dashed;
   border-color: rgb(0, 150, 255);
   border-radius: 30px;
@@ -37,6 +42,7 @@ li {
   padding: .5em;
 }
 
+/*class with text decoration*/
 .under {
     text-decoration: underline red;
 }
@@ -44,7 +50,8 @@ li {
 *{
     box-sizing: border-box;
 }
-  
+
+/*display inline-block*/
 .box {
     display: inline-block;
     width: 200px;
@@ -53,13 +60,15 @@ li {
     color: rgb(0, 0, 0);
 }
 
+/*ID selector with position*/
 #two {
     position: relative;
     top: 20px;
     left: 20px;
     background: rgb(0, 140, 255);
   }
-
+  
+/*ID selector with position*/
 #four {
     position: sticky;
     top: 20px;
@@ -67,7 +76,7 @@ li {
     background: rgb(255, 187, 0);
   }
 
-
+/*flexbox parent with 3 attribute*/
 .flexbox {
     display: flex;
     flex-direction: column;
@@ -77,6 +86,7 @@ li {
     margin: 50px;
 }
 
+/*flexbox children 1*/
 .flexbox-item1{
     align-self: flex-start;
     background-color: rgb(255, 255, 255);
@@ -85,6 +95,7 @@ li {
     font-size: 30px;
 }
 
+/*flexbox children 2*/
 .flexbox-item2{
     align-self: flex-start;
     flex-grow: 4;
@@ -94,6 +105,7 @@ li {
     font-size: 30px;
 }
 
+/*flexbox children 3*/
 .flexbox-item3{
     align-self: flex-end;
     flex-shrink: 5;
@@ -103,6 +115,7 @@ li {
     font-size: 30px;
 }
 
+/*flexbox parent with 2 attribute*/
 .grid{
     display: grid;
     column-gap: 50px;
@@ -113,6 +126,7 @@ li {
     padding: auto;
 }
 
+/*grid children 1 with 2 attribute*/
 .grid-item1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -123,6 +137,7 @@ li {
     text-align: center;
 }
 
+/*grid children 2 with 2 attribute*/
 .grid-item2 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -133,6 +148,7 @@ li {
     text-align: center;
 }
 
+/*grid children 3 with 1 attribute*/
 .grid-item3 {
     justify-self: end;
     background-color: rgb(255, 255, 255);
@@ -142,30 +158,36 @@ li {
     text-align: center;
 }
 
+/*Attribute Selector*/
 a[target] {
     background-color: yellow;
   }
 
+/*Pseudo-class*/
 a:hover {
     color: hotpink;
 }
 
+/*Pseudo-class*/
 a:active {
     color: blue;
   }
 
+/*Descendant Combinator*/
 div h3 {
     color: rgb(209, 137, 29);
 }
 
+/*Adjacent sibling combinator */
 div + h3 {
     color: rgb(234, 2, 255);
   }
 
+/*General sibling combinator*/
 video ~ h3 {
     color: rgb(30, 84, 116);
 }
-
+/*Combining Two Selectors*/
 div.grid-item1 {
     color: #b60000;
 }
